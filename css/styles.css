@@ -322,7 +322,9 @@ width: calc((100% - 2 * 24px)/3)
 
 .footer-logo .logo-part{
     color: var(--color-cloud);
-    margin-bottom: 16px;
+}
+.footer-logo {
     display: inline-block;
+    margin-bottom: 16px;
 }
 /* #endregion */
