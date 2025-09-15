@@ -42,7 +42,18 @@ a{
 .section{
     padding-top: 120px;
     padding-bottom: 120px;
-
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 /* #endregion */
 /* #region Header */
@@ -118,6 +129,7 @@ color:var(--color-navy-blue);
 .hero{
     font-family: "Roboto", sans-serif;
     background-color:var(--color-navy-blue);
+    padding: 188px 0;
 }
 .hero-title{
     font-weight: 700;
@@ -153,13 +165,6 @@ color:var(--color-navy-blue);
 .hero-button:focus{
     background-color: var( --color-ocean);
 }
-.hero .container {
-    padding-top: 188px;
-    padding-bottom: 292px;
-    height: 600px;
-
-
-}
 /* #endregion */
 /* #region Future (section2) */
 .feature-list-title{
@@ -186,16 +191,14 @@ color:var(--color-navy-blue);
     gap: 24px;
     justify-content: center;
 }
-.feature-container{
-    margin-top: 120px;
-    margin-bottom: 120px;
+.feature-section{
+    padding: 120px 0;
 }
 /* #endregion */
 /* #region Our Time (section3)*/
 .ourtime-section{
     background-color: var(--color-cloud);
 }
-
 .ourtime-title{
     font-weight: 700;
     font-size: 36px;
@@ -205,8 +208,7 @@ color:var(--color-navy-blue);
     color:var(--color-navy-blue);
     text-transform: capitalize;
 
-   
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .ourtime-list-item{
     font-weight: 500;
@@ -215,10 +217,7 @@ color:var(--color-navy-blue);
     letter-spacing: 0.02em;
     text-align: center;
     background-color:var(--color-white);
-
-    
-    
-
+    border-radius: 0px 0px 4px 4px;
 }
 .ourtime-item-title{
     font-weight: 500;
@@ -239,8 +238,6 @@ color:var(--color-navy-blue);
     letter-spacing: 0.02em;
     text-align: center;
     color:var(--color-slate);
-    
-    margin-bottom: 32px;
 }
 .ourtime-list{
     display: flex;
@@ -248,7 +245,10 @@ color:var(--color-navy-blue);
 }
 .ourtime-img{
     display: block;
-    margin-bottom: 32px;
+}
+.ourtime-card-content {
+    padding: 32px 0;
+    text-align: center;
 }
 /* #endregion */
 /* #region Our Portfolio (section4) */
@@ -272,11 +272,7 @@ color:var(--color-navy-blue);
     line-height: 1.2;
     letter-spacing: 0.02em;
     color:var(--color-navy-blue);
-
-    margin-top: 32px;
-    margin-left: 16px;
     margin-bottom: 8px;
-
 }
 .ourportfolio-list-text{
     font-weight: 400;
@@ -284,10 +280,6 @@ color:var(--color-navy-blue);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:var(--color-slate);
-
-    margin-left: 16px;
-    margin-bottom: 32px;
-
 }
 .ourportfolio-list{
     display: flex;
@@ -303,12 +295,15 @@ color:var(--color-navy-blue);
     
 }
 .ourportfolio-list-item{
-border-bottom: 1px solid #e7e9fc;
-    border-left: 1px solid #e7e9fc;
-    border-right: 1px solid #e7e9fc;
+
 width: calc((100% - 2 * 24px)/3)
 }
-
+.list-item-content{
+    padding: 32px 16px;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+}
 /* #endregion */ 
 
 /* #region Footer */
@@ -323,10 +318,11 @@ width: calc((100% - 2 * 24px)/3)
     letter-spacing: 0.02em;
     color: var(--color-cloud);
     width: 264px;
-    margin-top: 16px;
 }
 
 .footer-logo .logo-part{
     color: var(--color-cloud);
+    margin-bottom: 16px;
+    display: inline-block;
 }
 /* #endregion */
